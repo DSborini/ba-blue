@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useInfoState, { setUserName } from '../resources/userInfoState';
 import mainIcon from '../assets/images/mainIcon.png';
 
 function Start() {
@@ -8,6 +9,12 @@ function Start() {
     const handleStartClick = () => {
         setShowStartButton(false);
         setShowInputAndEnterButton(true);
+    };
+
+    const handleSelectAvatarClick = () => {
+        const input = document.querySelector('.common-styles.input');
+        const userName = input.value;
+        setUserName(userName);
     };
 
     return (
@@ -26,7 +33,7 @@ function Start() {
                     <div className='start-div-3'>
                         <>
                             <input type='text' className='common-styles input spartan placeholder' placeholder='Digite aqui' />
-                            <button className='common-styles spartan'>Entrar</button>
+                            <button className='common-styles spartan' onClick={handleSelectAvatarClick}>Entrar</button>
                         </>
                     </div>
                 </div>
