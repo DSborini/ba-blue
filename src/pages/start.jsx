@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-import useInfoState, { setUserName } from '../resources/userInfoState';
+import { useNavigate } from 'react-router-dom';
+import useInfoState from '../resources/userInfoState';
 import mainIcon from '../assets/images/mainIcon.png';
 
 function Start() {
     const [showStartButton, setShowStartButton] = useState(true);
     const [showInputAndEnterButton, setShowInputAndEnterButton] = useState(false);
+
+    const setUserName = useInfoState((state) => state.setUserName);
+    const navigate = useNavigate();
 
     const handleStartClick = () => {
         setShowStartButton(false);
@@ -15,6 +19,8 @@ function Start() {
         const input = document.querySelector('.common-styles.input');
         const userName = input.value;
         setUserName(userName);
+
+        navigate('/avatar');
     };
 
     return (

@@ -1,15 +1,15 @@
 import React from 'react';
 import AvatarCard from '../components/avatarCard';
+import avatarOptions from '../resources/avatarOptions';
 
 const AvatarSelection = () => {
     return (
         <div>
             <h1>Avatar Selection</h1>
             <div>
-                {/* Render multiple AvatarCard components here */}
-                <AvatarCard />
-                <AvatarCard />
-                <AvatarCard />
+                {avatarOptions.map((avatar, index) => (
+                    <AvatarCard key={index} imagePath={require(`../assets/images/${avatar.path}`)} />
+                ))}
             </div>
         </div>
     );

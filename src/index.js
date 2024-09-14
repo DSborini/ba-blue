@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import AvatarSelection from './pages/avatarSelection';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+        <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/avatar" element={<AvatarSelection />} />
+        </Routes>
+    </Router>,
   </React.StrictMode>
 );
 
