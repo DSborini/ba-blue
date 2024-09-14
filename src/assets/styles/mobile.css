@@ -49,17 +49,16 @@
 
 .input {
     width: 80vw;
-    border: 2px solid #a0dfff; /* Azul mais claro */
-    background-color: #6cddff; /* Cinza claro */
+    border: 2px solid #a0dfff;
+    background-color: #6cddff;
     padding: 0px;
     border-radius: 16px;
 }
 
-/* Estilo para o input focado */
 .input:focus {
-    outline: none; /* Remove a borda laranja padrão */
-    border-color: #38b6ff; /* Define a cor da borda ao focar */
-    box-shadow: 0 0 5px #38b6ff; /* Adiciona um efeito de sombra */
+    outline: none;
+    border-color: #38b6ff;
+    box-shadow: 0 0 5px #38b6ff;
 }
 
 /* Divs */

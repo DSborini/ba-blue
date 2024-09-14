@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Avatar 1",
+        "path": "src/assets/images/firstAvatar.png",
+        "pronoun": "he/him"
+    },
+    {
+        "name": "Avatar 2",
+        "path": "src/assets/images/secondAvatar.png",
+        "pronoun": "he/him"
+    },
+    {
+        "name": "Avatar 3",
+        "path": "src/assets/images/thirdAvatar.png",
+        "pronoun": "she/her"
+    },
+    {
+        "name": "Avatar 4",
+        "path": "src/assets/images/fourthAvatar.png",
+        "pronoun": "she/her"
+    }
+]
