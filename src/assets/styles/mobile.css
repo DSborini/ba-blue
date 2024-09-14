@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+/* Fonts */
+
 .spartan {
     font-family: "League Spartan", sans-serif;
     font-style: normal;
@@ -11,29 +13,78 @@
     line-height: 18px;
 }
 
+::placeholder {
+    color: #FFF;
+}
+
+.paragraph {
+    color: #6692BA;
+    font-size: 7vw;
+    line-height: 8vw;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Images */
+
 .main-icon {
     width: 100vw;
 }
 
-.button {
-    border-radius: 20px;
+/* Small components */
+
+.common-styles {
+    border-radius: 16px;
     border: none;
     background: #38b6ff;
     display: flex;
-    width: 255px;
-    height: 45px;
-    padding: 10px 123px;
+    width: 50vw;
+    height: 4.5vh;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
 }
 
+.input {
+    width: 80vw;
+    border: 2px solid #a0dfff; /* Azul mais claro */
+    background-color: #6cddff; /* Cinza claro */
+    padding: 0px;
+    border-radius: 16px;
+}
+
+/* Estilo para o input focado */
+.input:focus {
+    outline: none; /* Remove a borda laranja padrão */
+    border-color: #38b6ff; /* Define a cor da borda ao focar */
+    box-shadow: 0 0 5px #38b6ff; /* Adiciona um efeito de sombra */
+}
+
+/* Divs */
+
 .start-div-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35vw;
-    margin-top: 40vw;
+    margin-top: 35vw;
+}
+
+.start-div-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0vw;
+}
+
+.start-div-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vw;
 }
