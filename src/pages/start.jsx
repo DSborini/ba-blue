@@ -15,7 +15,7 @@ function Start() {
         setShowInputAndEnterButton(true);
     };
 
-    const handleSelectAvatarClick = () => {
+    const handleEnterClick = () => {
         const input = document.querySelector('.common-styles.input');
         const userName = input.value;
         setUserName(userName);
@@ -39,7 +39,7 @@ function Start() {
                     <div className='start-div-3'>
                         <>
                             <input type='text' className='common-styles input spartan placeholder' placeholder='Digite aqui' />
-                            <button className='common-styles spartan' onClick={handleSelectAvatarClick}>Entrar</button>
+                            <button className='common-styles spartan' onClick={handleEnterClick}>Entrar</button>
                         </>
                     </div>
                 </div>

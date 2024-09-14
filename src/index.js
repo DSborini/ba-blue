@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import AvatarSelection from './pages/avatarSelection';
+import Home from './pages/home';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -14,6 +15,7 @@ root.render(
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/avatar" element={<AvatarSelection />} />
+            <Route path="/home" element={<Home />} />
         </Routes>
     </Router>,
   </React.StrictMode>
