@@ -32,6 +32,11 @@
     width: 100vw;
 }
 
+.avatar-image {
+    margin-top: 2vh;
+    width: 40vw;  
+}
+
 /* Small components */
 
 .common-styles {
@@ -61,6 +66,13 @@
     box-shadow: 0 0 5px #38b6ff;
 }
 
+.avatar-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 /* Divs */
 
 .start-div-1 {
@@ -86,4 +98,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 30vw;
+}
+
+.avatar-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de largura igual */
+    gap: 0vh; /* Espaçamento entre os itens */
+    margin-top: 6vh;
+}
+
+.avatar-div-1 {
+    margin-top: 13vh;
+    margin-bottom: 13vh;
+    margin-right: 0.5vh;
+    margin-left: 0.5vh;
 }
