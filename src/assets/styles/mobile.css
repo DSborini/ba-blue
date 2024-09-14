@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+.spartan {
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.main-icon {
+    width: 100vw;
+}
+
+.button {
+    border-radius: 20px;
+    border: none;
+    background: #38b6ff;
+    display: flex;
+    width: 255px;
+    height: 45px;
+    padding: 10px 123px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.start-div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35vw;
+    margin-top: 40vw;
+}
