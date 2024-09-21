@@ -9,8 +9,7 @@ const SampleHeader = () => {
     const userSelectedAvatar = userInfoState((state) => state.userSelectedAvatar);
 
     const handleBackClick = () => {
-        // Lógica para voltar
-        console.log('Voltar');
+        window.history.back();
     };
 
     const handleMenuClick = () => {

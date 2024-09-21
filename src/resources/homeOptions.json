@@ -2,15 +2,25 @@
     {
         "name": "MEU ESPAÇO",
         "path": "mySpaceHome.png",
-        "color": "#DDA1FA"
+        "size": "10",
+        "margin": "8",
+        "color": "#DDA1FA",
+        "redirect": "myspace"
     },
     {
-        "name": "HORA DO HISTÓRIA",
-        "path": "storyTime.png"
+        "name": "HORA DA HISTÓRIA",
+        "path": "storyTimeHome.png",
+        "size": "20",
+        "margin": "5",
+        "color": "#9CEF79",
+        "redirect": "story"
     },
     {
         "name": "CALENDÁRIO",
         "path": "calendarHome.png",
-        "color": "#FECC33"
+        "size": "13",
+        "margin": "14",
+        "color": "#FECC33",
+        "redirect": "calendar"
     }
 ]
