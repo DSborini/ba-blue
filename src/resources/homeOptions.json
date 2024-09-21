@@ -1,0 +1,16 @@
+[
+    {
+        "name": "MEU ESPAÇO",
+        "path": "mySpaceHome.png",
+        "color": "#DDA1FA"
+    },
+    {
+        "name": "HORA DO HISTÓRIA",
+        "path": "storyTime.png"
+    },
+    {
+        "name": "CALENDÁRIO",
+        "path": "calendarHome.png",
+        "color": "#FECC33"
+    }
+]
