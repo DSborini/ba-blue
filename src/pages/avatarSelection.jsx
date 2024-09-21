@@ -8,8 +8,8 @@ function AvatarSelection() {
     const setUserSelectedAvatar = useInfoState((state) => state.setUserSelectedAvatar);
     const navigate = useNavigate();
 
-    const handleSelectAvatarClick = (avatarName) => {
-        setUserSelectedAvatar(avatarName);
+    const handleSelectAvatarClick = (avatarData) => {
+        setUserSelectedAvatar(avatarData);
 
         navigate('/home');
     };
@@ -22,7 +22,7 @@ function AvatarSelection() {
                     <AvatarCard
                         key={avatar.name}
                         imagePath={require(`../assets/images/${avatar.path}`)}
-                        onClick={() => handleSelectAvatarClick(avatar.name)}
+                        onClick={() => handleSelectAvatarClick(avatar)}
                     />
                 ))}
             </div>

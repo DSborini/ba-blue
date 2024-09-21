@@ -2,21 +2,25 @@
     {
         "name": "Avatar 1",
         "path": "firstAvatar.png",
+        "profilePath": "firstAvatarProfile.png",
         "pronoun": "he/him"
     },
     {
         "name": "Avatar 2",
         "path": "secondAvatar.png",
+        "profilePath": "secondAvatarProfile.png",
         "pronoun": "he/him"
     },
     {
         "name": "Avatar 3",
         "path": "thirdAvatar.png",
+        "profilePath": "thirdAvatarProfile.png",
         "pronoun": "she/her"
     },
     {
         "name": "Avatar 4",
         "path": "fourthAvatar.png",
+        "profilePath": "fourthAvatarProfile.png",
         "pronoun": "she/her"
     }
 ]
