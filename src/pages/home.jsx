@@ -11,6 +11,7 @@ function Home() {
 
     const handleSelectOptionClick = (optionData) => {
         const destinantion = optionData.redirect;
+        console.log(destinantion);
 
         navigate('/' + destinantion);
     };
@@ -28,7 +29,7 @@ function Home() {
                         imagePath={require(`../assets/images/${option.path}`)}
                         imageSize={option.size}
                         imageMargin={option.margin}
-                        onClick={handleSelectOptionClick(option)}
+                        onClick={() => handleSelectOptionClick(option)}
                         text={option.name}
                         color={option.color}
                     />
