@@ -1,0 +1,52 @@
+[
+    {
+        "name": "EMOÇÕES",
+        "textMarginLeft": "2.6",
+        "color": "#72CBFF",
+        "redirect": "emotions",
+        "hasExtraIcon": true,
+        "extraIconPath": "emotionsBrain.svg",
+        "extraIconMarginTop": "10",
+        "extraIconMarginLeft": "10"
+    },
+    {
+        "name": "DORES E NECESSIDADES",
+        "textMarginLeft": "0",
+        "color": "#C78AE4",
+        "redirect": "painsNeeds",
+        "hasExtraIcon": true,
+        "extraIconPath": "painsNeedsBrain.svg",
+        "extraIconMarginTop": "-23.5",
+        "extraIconMarginLeft": "10"
+    },
+    {
+        "name": "ROTINA",
+        "textMarginLeft": "3.3",
+        "color": "#9CEF79",
+        "redirect": "routine",
+        "hasExtraIcon": true,
+        "extraIconPath": "routineBrain.svg",
+        "extraIconMarginTop": "11",
+        "extraIconMarginLeft": "9.5"
+    },
+    {
+        "name": "NÚMEROS",
+        "textMarginLeft": "2.5",
+        "color": "#FECC33",
+        "redirect": "numbers",
+        "hasExtraIcon": false,
+        "extraIconPath": "",
+        "extraIconMarginTop": "",
+        "extraIconMarginLeft": ""
+    },
+    {
+        "name": "LETRAS",
+        "textMarginLeft": "3.3",
+        "color": "#4D96FF",
+        "redirect": "letters",
+        "hasExtraIcon": false,
+        "extraIconPath": "",
+        "extraIconMarginTop": "",
+        "extraIconMarginLeft": ""
+    }
+]
