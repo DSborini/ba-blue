@@ -8,6 +8,7 @@ import Home from './pages/home';
 import MySpace from './pages/mySpace';
 import Story from './pages/story';
 import Calendar from './pages/calendar';
+import Numbers from './pages/numbers';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -22,12 +23,10 @@ root.render(
             <Route path="/myspace" element={<MySpace />} />
             <Route path="/story" element={<Story />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/numbers" element={<Numbers />} />
         </Routes>
     </Router>,
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

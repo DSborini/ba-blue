@@ -293,7 +293,7 @@
     margin-top: 4rem;
 }
 
-.ms-options > *:nth-child(3) {
+.ms-options>*:nth-child(3) {
     grid-column: span 2;
     justify-self: center;
 }
@@ -309,4 +309,48 @@
     width: 20vh;
     border: none;
     margin-left: 1rem;
+}
+
+/* Numbers */
+
+.n-numeric-keyboard-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem;
+}
+
+.n-numeric-keyboard-div>*:last-child {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.n-keyboard-row {
+    justify-content: center;
+    display: grid;
+}
+
+.n-keyboard-button {
+    border: none;
+    width: 6.5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.n-tile {
+    margin-top: 7vh;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FECC33
+}
+
+.n-number {
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 30px;
 }
