@@ -1,26 +1,29 @@
 [
     {
         "name": "MEU ESPAÇO",
+        "description": "Aqui você pode mostrar como está se sentido!",
         "path": "mySpaceHome.png",
         "size": "10",
         "margin": "8",
-        "color": "#DDA1FA",
+        "color": "#FECC33",
         "redirect": "myspace"
     },
     {
-        "name": "HORA DA HISTÓRIA",
-        "path": "storyTimeHome.png",
-        "size": "20",
+        "name": "HORA DE APRENDER",
+        "description": "Aqui você pode estudar e aprender coisas novas!",
+        "path": "studyTimeHome.png",
+        "size": "10",
         "margin": "5",
-        "color": "#9CEF79",
-        "redirect": "story"
+        "color": "#CB6CE6",
+        "redirect": "studytime"
     },
     {
-        "name": "CALENDÁRIO",
-        "path": "calendarHome.png",
-        "size": "13",
-        "margin": "14",
-        "color": "#FECC33",
-        "redirect": "calendar"
+        "name": "JOGOS",
+        "description": "Aqui você pode se divertir com jogos!",
+        "path": "gamesHome.png",
+        "size": "7",
+        "margin": "5",
+        "color": "#004AAD",
+        "redirect": "games"
     }
 ]

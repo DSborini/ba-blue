@@ -1,17 +1,16 @@
 import React from 'react';
 
-const MySpaceOptionCard = ({ name, color, onClick, hasExtraIcon, extraIconPath, extraIconMarginTop, extraIconMarginLeft, textMarginLeft }) => {
+const MySpaceOptionCard = ({ imagePath, imageSize, imageMargin, onClick, text, description, color, imageMarginTop }) => {
     return (
         <button onClick={onClick} className='ms-options-button' style={{ backgroundColor: color }}>
-            <p className='spartan h3 ms-text' style={{ marginLeft: `${textMarginLeft}rem` }}>{name}</p>
-            {hasExtraIcon && (
-                <img 
-                    src={extraIconPath} 
-                    alt="Menu" 
-                    className='ms-extra-icon' 
-                    style={{ marginTop: `${extraIconMarginTop}vh`, marginLeft: `${extraIconMarginLeft}vh` }}
-                />
-            )}
+            <div className='ms-options-txtimg'>
+                <p className='spartan h6 no-margin'>{text}</p>
+                <p className='spartan h5 ms-description-txt no-margin'>{description}</p>
+            </div>
+            <img 
+                src={imagePath} 
+                alt="Menu" className='ms-image' 
+                style={{ height: `${imageSize}vh`, marginRight: `${imageMargin}vw`, marginTop: `${imageMarginTop}vw`}}/>
         </button>
     );
 };

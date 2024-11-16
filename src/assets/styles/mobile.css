@@ -43,12 +43,44 @@
     font-size: 5.5vw;
 }
 
+.no-margin {
+    margin-top: 0;
+}
+
+.align-center {
+    text-align: right;
+}
+
 .h3 {
     color: #000000;
     font-size: 6vw;
     line-height: 3.5vh;
     text-align: left;
     margin-left: 6.5vw;
+}
+
+.h4 {
+    color: #000000;
+    font-size: 4.5vw;
+    line-height: 1.8vh;
+    text-align: left;
+    margin-left: 6.5vw;
+}
+
+.h5 {
+    color: #000000;
+    font-size: 4.5vw;
+    line-height: 1.8vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.h6 {
+
+    margin-top: 4.0vw;
+    color: #000000;
+    font-size: 5.0vw;
+    font-weight: bold;
 }
 
 /* Images */
@@ -260,55 +292,64 @@
 
 .h-options-button {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 20vh;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 30px;
     border: none;
     margin-left: 4vw;
     margin-right: 4vw;
 }
 
+.h-options-txtimg {
+    display: grid;
+}
+
+.h-description-txt {
+    max-width: 60vw;
+}
+
 .h-image {
-    margin-right: 8vw;
+    margin-right: 0vw;
 }
 
 /* My Space */
 
-.ms-text {
-    color: #000000;
-    font-size: 4.5vw;
-    line-height: 3.5vh;
-    margin-left: 6.5vw;
-    color: #000;
-    text-align: center;
-    font-weight: 900;
-    line-height: 17.538px;
+.ms-header {
+    display: grid;
+    align-items: top;
+    max-height: 30vh;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .ms-options {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 3vh;
-    margin-top: 4rem;
-}
-
-.ms-options>*:nth-child(3) {
-    grid-column: span 2;
-    justify-self: center;
-}
-
-.ms-extra-icon {
-    position: absolute;
+    align-items: space-between;
+    height: 70vh;
+    margin-top: 3vh;
 }
 
 .ms-options-button {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 17vh;
-    width: 20vh;
+    height: 20vh;
+    border-radius: 30px;
     border: none;
-    margin-left: 1rem;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.ms-options-txtimg {
+    display: grid;
+}
+
+.ms-description-txt {
+    margin-top: -1.5vh;
+    max-width: 60vw;
+}
+
+.ms-image {
+    margin-right: 10vw;
 }
 
 /* Numbers */

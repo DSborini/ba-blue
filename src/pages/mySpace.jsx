@@ -21,18 +21,17 @@ function MySpace() {
                 <p className='spartan paragraph h1'>Meu espaço</p>
                 <p className='spartan paragraph h2'>O que você gostaria de dizer?</p>
             </div>
-            <div className='ms-options'>
+            <div className='h-options'>
                 {mySpaceOptions.map((option) => (
                     <MySpaceOptionCard
-                        key={option.name}
-                        name={option.name}
-                        color={option.color}
-                        hasExtraIcon={option.hasExtraIcon}
-                        extraIconPath={option.hasExtraIcon ? require(`../assets/images/myspace/${option.extraIconPath}`) : null}
-                        extraIconMarginTop={option.extraIconMarginTop}
-                        extraIconMarginLeft={option.extraIconMarginLeft}
-                        textMarginLeft={option.textMarginLeft}
+                        imagePath={require(`../assets/images/${option.path}`)}
+                        imageSize={option.size}
+                        imageMargin={option.margin}
                         onClick={() => handleSelectOptionClick(option)}
+                        text={option.name}
+                        description={option.description}
+                        color={option.color}
+                        imageMarginTop={option.marginTop}
                     />
                 ))}
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import SampleHeader from '../components/sampleHeader';
 
-function Story() {
+function StudyTime() {
     return (
         <div>
             <SampleHeader />
@@ -10,4 +10,4 @@ function Story() {
     );
 };
 
-export default Story;
+export default StudyTime;

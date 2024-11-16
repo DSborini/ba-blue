@@ -6,8 +6,8 @@ import App from './App';
 import AvatarSelection from './pages/avatarSelection';
 import Home from './pages/home';
 import MySpace from './pages/mySpace';
-import Story from './pages/story';
-import Calendar from './pages/calendar';
+import StudyTime from './pages/studyTime';
+import Games from './pages/games';
 import Numbers from './pages/numbers';
 
 import reportWebVitals from './reportWebVitals';
@@ -21,8 +21,8 @@ root.render(
             <Route path="/avatar" element={<AvatarSelection />} />
             <Route path="/home" element={<Home />} />
             <Route path="/myspace" element={<MySpace />} />
-            <Route path="/story" element={<Story />} />
-            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/studytime" element={<StudyTime />} />
+            <Route path="/games" element={<Games />} />
             <Route path="/numbers" element={<Numbers />} />
         </Routes>
     </Router>,

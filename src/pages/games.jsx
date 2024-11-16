@@ -1,7 +1,7 @@
 import React from 'react';
 import SampleHeader from '../components/sampleHeader';
 
-function Calendar() {
+function Games() {
     return (
         <div>
             <SampleHeader />
@@ -10,4 +10,4 @@ function Calendar() {
     );
 };
 
-export default Calendar;
+export default Games;

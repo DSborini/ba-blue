@@ -31,6 +31,7 @@ function Home() {
                         imageMargin={option.margin}
                         onClick={() => handleSelectOptionClick(option)}
                         text={option.name}
+                        description={option.description}
                         color={option.color}
                     />
                 ))}
