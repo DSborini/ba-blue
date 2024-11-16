@@ -22,7 +22,7 @@
     font-size: 7vw;
     line-height: 8vw;
     font-feature-settings: 'liga' off, 'clig' off;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .header-menu {
@@ -41,14 +41,6 @@
     margin-top: -4.5vh;
     color: #000000;
     font-size: 5.5vw;
-}
-
-.no-margin {
-    margin-top: 0;
-}
-
-.align-center {
-    text-align: right;
 }
 
 .h3 {
@@ -81,6 +73,42 @@
     color: #000000;
     font-size: 5.0vw;
     font-weight: bold;
+}
+
+.no-margin {
+    margin-top: 0;
+}
+
+.max-width {
+    max-width: 80vw;
+}
+
+.auto-align {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.align-center {
+    text-align: right;
+}
+
+.solar-color-h1 {
+    color: #6CBAE7
+}
+
+.solar-color-h2 {
+    margin-top: -3vh;
+    color: #F4F5F7;
+    font-size: 4.5vw;
+}
+
+.emotions-color-h1 {
+    color: #22A1EA;
+    font-weight: bold;
+}
+
+.games-color-h6 {
+    color: #FECC33
 }
 
 /* Images */
@@ -350,6 +378,61 @@
 
 .ms-image {
     margin-right: 10vw;
+}
+
+/* Emotions */
+
+.ee-button-card {
+    background: none;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+.ee-image {
+    width: 40vw;
+    height: auto;
+}
+
+.ee-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+    margin-right: 6vw;
+    margin-left: 6vw;
+}
+
+/* Study Solar */
+
+.ss-main-div {
+    background-color: #393939;;
+}
+
+.ss-fullscreen {
+    height: 530vh;
+}
+
+.ss-button-card {
+    background: none;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+.ss-image {
+    width: 70vw;
+    height: auto;
+}
+
+/* Games */
+
+.game-options {
+    display: grid;
+    align-items: start;
+    height: 50vh;
+    margin-top: 3vh;
+}
+
+.games-options-txtimg {
+    margin-top: 3vh;
 }
 
 /* Numbers */

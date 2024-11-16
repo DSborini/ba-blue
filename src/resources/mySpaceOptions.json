@@ -7,7 +7,7 @@
         "margin": "0",
         "marginTop": "-6",
         "color": "#0097B2",
-        "redirect": "myspace"
+        "redirect": "myspace/emotions"
     },
     {
         "name": "DORES E NECESSIDADES",
@@ -17,7 +17,7 @@
         "margin": "3",
         "marginTop": "-6",
         "color": "#CB6CE6",
-        "redirect": "studytime"
+        "redirect": "myspace/pain"
     },
     {
         "name": "ROTINA",
@@ -27,6 +27,6 @@
         "margin": "0",
         "marginTop": "-3.5",
         "color": "#FFE8A8",
-        "redirect": "games"
+        "redirect": "myspace/routine"
     }
 ]

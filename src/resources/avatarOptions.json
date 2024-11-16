@@ -1,24 +1,24 @@
 [
     {
-        "name": "Avatar 1",
+        "name": "firstAvatar",
         "path": "firstAvatar.png",
         "profilePath": "firstAvatarProfile.png",
         "pronoun": "he/him"
     },
     {
-        "name": "Avatar 2",
+        "name": "secondAvatar",
         "path": "secondAvatar.png",
         "profilePath": "secondAvatarProfile.png",
         "pronoun": "he/him"
     },
     {
-        "name": "Avatar 3",
+        "name": "thirdAvatar",
         "path": "thirdAvatar.png",
         "profilePath": "thirdAvatarProfile.png",
         "pronoun": "she/her"
     },
     {
-        "name": "Avatar 4",
+        "name": "fourthAvatar",
         "path": "fourthAvatar.png",
         "profilePath": "fourthAvatarProfile.png",
         "pronoun": "she/her"

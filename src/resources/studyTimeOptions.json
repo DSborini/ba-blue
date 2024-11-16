@@ -1,0 +1,33 @@
+[
+    {
+        "name": "SISTEMA SOLAR",
+        "description": "",
+        "path": "solarSystemStudy.png",
+        "size": "14",
+        "margin": "4",
+        "marginTop": "-1.7",
+        "color": "#0F0202",
+        "fontColor": "#FECC33",
+        "redirect": "studytime/solar"
+    },
+    {
+        "name": "FAMÍLIA FAMILY",
+        "description": "INGLÊS",
+        "path": "familyStudy.png",
+        "size": "20",
+        "margin": "3",
+        "marginTop": "-19",
+        "color": "#CB6CE6",
+        "redirect": "studytime"
+    },
+    {
+        "name": "FRUTAS FRUITS",
+        "description": "INGLÊS",
+        "path": "fruitsStudy.png",
+        "size": "20",
+        "margin": "0",
+        "marginTop": "-19",
+        "color": "#FF5F91",
+        "redirect": "games"
+    }
+]

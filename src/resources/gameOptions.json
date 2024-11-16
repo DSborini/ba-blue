@@ -1,0 +1,22 @@
+[
+    {
+        "name": "PERGUNTAS E RESPOSTAS",
+        "description": "",
+        "path": "quizIcon.png",
+        "size": "13",
+        "margin": "0",
+        "marginTop": "-3",
+        "color": "#CB6CE6",
+        "redirect": "games/quiz"
+    },
+    {
+        "name": "JOGO DA MEMÓRIA",
+        "description": "",
+        "path": "memoryIcon.png",
+        "size": "12",
+        "margin": "0",
+        "marginTop": "-3",
+        "color": "#004AAD",
+        "redirect": "games/memory"
+    }
+]

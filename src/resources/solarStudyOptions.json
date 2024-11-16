@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nameToSpeech": "sistema solar",
+        "descriptionToSpeech": "",
+        "path": "solarSystemStudy.png"
+    },
+    {
+        "id": 2,
+        "nameToSpeech": "sol",
+        "descriptionToSpeech": "",
+        "path": "sun.png"
+    },
+    {
+        "id": 3,
+        "nameToSpeech": "terra",
+        "descriptionToSpeech": "",
+        "path": "earth.png"
+    },
+    {
+        "id": 4,
+        "nameToSpeech": "vênus",
+        "descriptionToSpeech": "",
+        "path": "venus.png"
+    },
+    {
+        "id": 5,
+        "nameToSpeech": "mercúrio",
+        "descriptionToSpeech": "",
+        "path": "mercury.png"
+    },
+    {
+        "id": 6,
+        "nameToSpeech": "marte",
+        "descriptionToSpeech": "",
+        "path": "mars.png"
+    },
+    {
+        "id": 7,
+        "nameToSpeech": "netuno",
+        "descriptionToSpeech": "",
+        "path": "neptune.png"
+    },
+    {
+        "id": 8,
+        "nameToSpeech": "saturno",
+        "descriptionToSpeech": "",
+        "path": "saturn.png"
+    },
+    {
+        "id": 9,
+        "nameToSpeech": "urano",
+        "descriptionToSpeech": "",
+        "path": "uranus.png"
+    },
+    {
+        "id": 10,
+        "nameToSpeech": "júpiter",
+        "descriptionToSpeech": "",
+        "path": "jupiter.png"
+    }
+]
