@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "feedback": "ARRASOU!",
+        "path": "fiveStars.png",
+        "extraContent": "Você acertou todas as questões! Parabéns!",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "feedback": "Parabéns!",
+        "path": "fourStars.png",
+        "extraContent": "Você acertou a maioria das questões! Continue assim!",
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "feedback": "Muito bem!",
+        "path": "threeStars.png",
+        "extraContent": "Você acertou algumas questões! Mas podemos melhorar, continue praticando!",
+        "rating": 3
+    },
+    {
+        "id": 4,
+        "feedback": "Legal!",
+        "path": "twoStars.png",
+        "extraContent": "Você acertou poucas questões! Que tal jogar novamente?",
+        "rating": 2
+    },
+    {
+        "id": 5,
+        "feedback": "Bom!",
+        "path": "oneStar.png",
+        "extraContent": "Você pode fazer melhor! Vamos jogar novamente?",
+        "rating": 1
+    },
+    {
+        "id": 6,
+        "feedback": "",
+        "path": "",
+        "extraContent": "Poxa, dessa vez não acertamos, mas não tem problema! Que tal tentar de novo?",
+        "rating": 0
+    }
+]

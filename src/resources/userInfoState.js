@@ -8,9 +8,12 @@ const useInfoState = create((set) => ({
         profilePath: "",
         pronoun: ""
     },
+    userLastQuizScore: 0,
 
     setUserName: (name) => set({ userName: name }),
     setUserSelectedAvatar: (avatar) => set({ userSelectedAvatar: avatar }),
+    setUserLastQuizScore: (score) => set({ userLastQuizScore: score }),
+    resetUserLastQuizScore: () => set({ userLastQuizScore: 0 })
 }))
 
 export default useInfoState;

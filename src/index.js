@@ -10,6 +10,8 @@ import Emotions from './pages/emotions';
 import StudyTime from './pages/studyTime';
 import SolarStudy from './pages/solarStudy';
 import Games from './pages/games';
+import Quiz from './pages/quiz';
+import Feedback from './pages/feedback';
 import Numbers from './pages/numbers';
 
 import reportWebVitals from './reportWebVitals';
@@ -27,6 +29,8 @@ root.render(
             <Route path="/studytime" element={<StudyTime />} />
             <Route path="/studytime/solar" element={<SolarStudy />} />
             <Route path="/games" element={<Games />} />
+            <Route path="/games/quiz" element={<Quiz />} />
+            <Route path="/games/quiz/feedback" element={<Feedback />} />
             <Route path="/numbers" element={<Numbers />} />
         </Routes>
     </Router>,
