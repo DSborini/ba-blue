@@ -15,6 +15,8 @@ import EnFamily from './pages/enFamily';
 import EnFruits from './pages/enFruits';
 import Games from './pages/games';
 import Quiz from './pages/quiz';
+import Memory from './pages/memory';
+import MemoryFeedback from './pages/memoryFeedback';
 import Feedback from './pages/feedback';
 import Numbers from './pages/numbers';
 
@@ -38,6 +40,8 @@ root.render(
             <Route path="/studytime/enfruits" element={<EnFruits />} />
             <Route path="/games" element={<Games />} />
             <Route path="/games/quiz" element={<Quiz />} />
+            <Route path="/games/memory" element={<Memory />} />
+            <Route path="/games/memory/feedback" element={<MemoryFeedback />} />
             <Route path="/games/quiz/feedback" element={<Feedback />} />
             <Route path="/numbers" element={<Numbers />} />
         </Routes>

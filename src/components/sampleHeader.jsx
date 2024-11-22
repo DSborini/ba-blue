@@ -1,6 +1,5 @@
-// src/components/SampleHeader.jsx
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import arrowLeft from '../assets/icons/arrowLeft.svg';
 import headerMenu from '../assets/icons/headerMenu.svg';
 import userInfoState from '../resources/userInfoState';
@@ -8,13 +7,19 @@ import userInfoState from '../resources/userInfoState';
 const SampleHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
     const userName = userInfoState((state) => state.userName);
     const userSelectedAvatar = userInfoState((state) => state.userSelectedAvatar);
     const resetScore = userInfoState((state) => state.resetUserLastQuizScore);
 
+    // Verifica se a página atual é uma página de feedback
+    const isFeedbackPage = location.pathname.includes('/feedback');
+
     const handleBackClick = () => {
-        resetScore();
-        window.history.back();
+        if (!isFeedbackPage) {
+            resetScore();
+            window.history.back();
+        }
     };
 
     const handleMenuOptionClick = (route) => {
@@ -28,8 +33,16 @@ const SampleHeader = () => {
 
     return (
         <header className='sh-header'>
-            <button className='sh-button' onClick={handleBackClick}>
-                <img src={arrowLeft} alt="Voltar" className='sh-icon' />
+            <button 
+                className={`sh-button ${isFeedbackPage ? 'sh-button-disabled' : ''}`} 
+                onClick={handleBackClick}
+                disabled={isFeedbackPage}
+            >
+                <img 
+                    src={arrowLeft} 
+                    alt="Voltar" 
+                    className={`sh-icon ${isFeedbackPage ? 'sh-icon-disabled' : ''}`}
+                />
             </button>
             <button className='sh-button' onClick={handleMenuClick}>
                 <img src={headerMenu} alt="Menu" className='sh-icon' />
@@ -47,9 +60,7 @@ const SampleHeader = () => {
                     <div className='spartan header-menu'>
                         <ul className='sh-options'>
                             <div className='sh-suboptions'>
-                                <li 
-                                    className='sh-suboptions-li sh-disabled'
-                                >
+                                <li className='sh-suboptions-li sh-disabled'>
                                     Perfil
                                 </li>
                                 <div className='sh-menu-text-decoration sh-grey' />
@@ -64,17 +75,13 @@ const SampleHeader = () => {
                                 <div className='sh-menu-text-decoration' />
                             </div>
                             <div className='sh-suboptions'>
-                                <li 
-                                    className='sh-suboptions-li sh-disabled'
-                                >
+                                <li className='sh-suboptions-li sh-disabled'>
                                     Ajustes
                                 </li>
                                 <div className='sh-menu-text-decoration sh-grey' />
                             </div>
                             <div className=''>
-                                <li >
-                                ‎     
-                                </li>
+                                <li>‎</li>
                                 <div/>
                             </div>
                             <div className='sh-suboptions'>
