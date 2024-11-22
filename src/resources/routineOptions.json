@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nameToSpeech": {
+            "he/him": "acordar",
+            "she/her": "acordar"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faWakeup.png",
+            "secondAvatar": "saWakeup.png",
+            "thirdAvatar": "taWakeup.png",
+            "fourthAvatar": "foWakeup.png"
+        }
+    },
+    {
+        "id": 2,
+        "nameToSpeech": {
+            "he/him": "brincar",
+            "she/her": "brincar"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faPlay.png",
+            "secondAvatar": "saPlay.png",
+            "thirdAvatar": "taPlay.png",
+            "fourthAvatar": "foPlay.png"
+        }
+    },
+    {
+        "id": 3,
+        "nameToSpeech": {
+            "he/him": "comer",
+            "she/her": "comer"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faEat.png",
+            "secondAvatar": "saEat.png",
+            "thirdAvatar": "taEat.png",
+            "fourthAvatar": "foEat.png"
+        }
+    },
+    {
+        "id": 4,
+        "nameToSpeech": {
+            "he/him": "dormir",
+            "she/her": "dormir"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faSleep.png",
+            "secondAvatar": "saSleep.png",
+            "thirdAvatar": "taSleep.png",
+            "fourthAvatar": "foSleep.png"
+        }
+    },
+    {
+        "id": 5,
+        "nameToSpeech": {
+            "he/him": "banho",
+            "she/her": "banho"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faBath.png",
+            "secondAvatar": "saBath.png",
+            "thirdAvatar": "taBath.png",
+            "fourthAvatar": "foBath.png"
+        }
+    }
+]

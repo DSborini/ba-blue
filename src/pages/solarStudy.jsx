@@ -25,6 +25,7 @@ function SolarStudy() {
                 {solarStudyOptions.map((option) => (
                     <SolarStudyOptionCard
                         imagePath={require(`../assets/images/solar/${option.path}`)}
+                        text={option.descriptionToSpeech}
                     />
                 ))}
             </div>

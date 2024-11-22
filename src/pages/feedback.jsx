@@ -7,10 +7,26 @@ import SampleHeader from '../components/sampleHeader';
 const Feedback = () => {
     const navigate = useNavigate();
     const userLastQuizScore = userInfoState((state) => state.userLastQuizScore);
+    const resetScore = userInfoState((state) => state.resetUserLastQuizScore);
     const respectiveFeedback = feedbackResults.filter((result) => result.rating == userLastQuizScore);
     const totalPossibleScore = feedbackResults.length - 1;
 
     const { feedback, path, extraContent } = respectiveFeedback[0];
+
+    const handleAdvance = () => {
+        resetScore();
+        navigate('/games/quiz', { replace: true });
+    };
+    
+    const handleTryAgain = () => {
+        resetScore();
+        navigate('/games/quiz', { replace: true });
+    };
+    
+    const handleMenu = () => {
+        resetScore();
+        navigate('/home', { replace: true });
+    };
 
     return (
         <div>
@@ -23,9 +39,9 @@ const Feedback = () => {
                     <p className='spartan h6 fb-extra-text'>{extraContent}</p>
                 </div>
                 <div className='fb-buttons-container'>
-                    <button className='fb-button spartan h5 fb-green'>AVANÇAR</button>
-                    <button className='fb-button spartan h5 fb-blue'>TENTAR NOVAMENTE</button>
-                    <button className='fb-button spartan h5 fb-purple'>MENU</button>
+                    <button onClick={handleAdvance} className='fb-button spartan h5 fb-green'>AVANÇAR</button>
+                    <button onClick={handleTryAgain} className='fb-button spartan h5 fb-blue'>TENTAR NOVAMENTE</button>
+                    <button onClick={handleMenu} className='fb-button spartan h5 fb-purple'>MENU</button>
                 </div>
             </div>
         </div>

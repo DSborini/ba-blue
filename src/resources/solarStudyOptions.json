@@ -2,61 +2,61 @@
     {
         "id": 1,
         "nameToSpeech": "sistema solar",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Sistema Solar",
         "path": "solarSystemStudy.png"
     },
     {
         "id": 2,
         "nameToSpeech": "sol",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Sol. A gravidade do Sol mantém todos os planetas do nosso sistema solar em órbita ao seu redor.",
         "path": "sun.png"
     },
     {
         "id": 3,
         "nameToSpeech": "terra",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Terra. A Terra tem um clima diversificado e uma variedade de ecossistemas, como montanhas e oceanos.",
         "path": "earth.png"
     },
     {
         "id": 4,
         "nameToSpeech": "vênus",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Vênus. Vênus é frequentemente chamado de Estrela da Tarde ou Estrela da Manhã, pois é visível nesses momentos.",
         "path": "venus.png"
     },
     {
         "id": 5,
         "nameToSpeech": "mercúrio",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Mercúrio. Mercúrio é o menor planeta do nosso sistema solar.",
         "path": "mercury.png"
     },
     {
         "id": 6,
         "nameToSpeech": "marte",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Marte. Marte tem o vulcão mais alto do sistema solar, o Olympus Mons.",
         "path": "mars.png"
     },
     {
         "id": 7,
         "nameToSpeech": "netuno",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Netuno. Netuno é o planeta mais distante do Sol em nosso sistema solar.",
         "path": "neptune.png"
     },
     {
         "id": 8,
         "nameToSpeech": "saturno",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Saturno. Os espetaculares anéis de Saturno são compostos por inúmeras partículas de gelo e rocha.",
         "path": "saturn.png"
     },
     {
         "id": 9,
         "nameToSpeech": "urano",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Urano. Urano tem uma atmosfera gelada e é considerado um gigante gelado.",
         "path": "uranus.png"
     },
     {
         "id": 10,
         "nameToSpeech": "júpiter",
-        "descriptionToSpeech": "",
+        "descriptionToSpeech": "Júpiter. A Grande Mancha Vermelha de Júpiter é uma enorme tempestade que dura há séculos.",
         "path": "jupiter.png"
     }
 ]

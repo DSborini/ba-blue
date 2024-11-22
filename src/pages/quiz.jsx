@@ -25,11 +25,10 @@ const Quiz = () => {
     }   
 
     const handleNextQuestion = (answerNumber) => {
-        console.log(answerNumber);
         validateAnwser(answerNumber);
 
         if (currentQuestionIndex === firstTypeQuizOptions[0].questions.length - 1) {
-            navigate('/games/quiz/feedback');
+            navigate('/games/quiz/feedback', { replace: true });
         };
 
         setCurrentQuestionIndex(currentQuestionIndex + 1);

@@ -110,6 +110,10 @@
     color: #FECC33;
 }
 
+.routine-color-h1 {
+    color: #FC815B;
+}
+
 /* Images */
 
 .main-icon {
@@ -271,7 +275,6 @@
 .sh-profile-name {
     font-size: 5vw;
     color: #C78AE4;
-    ;
     margin-top: 3vh;
     margin-right: 2vw;
 }
@@ -281,6 +284,10 @@
     justify-content: flex-end;
 }
 
+.sh-disabled {
+    color: #848484;
+}
+
 .sh-suboptions-li {
     padding-right: 3vw;
 }
@@ -288,9 +295,29 @@
 .sh-menu-text-decoration {
     width: 2vw;
     height: 2.5vh;
-    background-color: #C78AE4;
+    background-color: #FC815B;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-top: 0.7vh;
+}
+
+.sh-yellow {
+    background-color: #FECC33;
+}
+
+.sh-purple {
+    background-color: #CB6CE6;
+}
+
+.sh-blue {
+    background-color: #004AAD;
+}
+
+.sh-orange {
+    background-color: #FC815B;
+}
+
+.sh-grey {
+    background-color: #a2a2a2;
 }
 
 .sh-options {
@@ -545,7 +572,7 @@
 }
 
 .fb-stars-img {
-    width: 50vw;
+    max-height: 8vh;
     margin-top: 5vh;
 }
 
@@ -591,12 +618,79 @@
 
 .fb-green {
     background: #83FF72;
+    font-weight: bold;
 }	
 
 .fb-blue {
     background: #72CBFF;
+    font-weight: bold;
 }
 
 .fb-purple {
     background: #C78AE4;
+    font-weight: bold;
+}
+
+/* Generic Space Card */
+
+.gg-options {
+    display: grid;
+    align-items: start;
+    height: 50vh;
+    margin-top: 3vh;
+}
+
+.gg-button-card {
+    background: none;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+.gg-image {
+    max-width: 50vw;
+}
+
+.speaking-indicator {
+    margin-bottom: -1.8vh;
+}
+
+/* Family */
+
+.fam-font-h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.2vh;
+}
+
+.fam-font-h2 {
+    margin-top: -3vh;
+    font-size: 2.2vh;
+}
+
+/* Generic English */
+
+.ge-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0vh;
+    margin-top: 1vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.ge-button-card {
+    background: none;
+    border: none;
+    margin-bottom: 2vh;
+}
+
+.ge-image {
+    align-self: center;
+    min-height: 10vh;
+    max-width: 38vw;
+}
+
+.ge-orange {
+    color: #FC815B;
 }
