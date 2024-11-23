@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ba-blue/static/css/main.06392cd3.css",
+    "main.css": "/ba-blue/static/css/main.12a43263.css",
     "main.js": "/ba-blue/static/js/main.6e6b7dc9.js",
     "static/js/453.592f260d.chunk.js": "/ba-blue/static/js/453.592f260d.chunk.js",
     "static/media/solarSystemStudy.png": "/ba-blue/static/media/solarSystemStudy.60bc4c8633dcff974361.png",
@@ -173,12 +173,12 @@
     "index.html": "/ba-blue/index.html",
     "static/media/headerMenu.svg": "/ba-blue/static/media/headerMenu.6379c4fea12134563184073a64f39610.svg",
     "static/media/arrowLeft.svg": "/ba-blue/static/media/arrowLeft.b02ecfd382cf579954d2280330c72208.svg",
-    "main.06392cd3.css.map": "/ba-blue/static/css/main.06392cd3.css.map",
+    "main.12a43263.css.map": "/ba-blue/static/css/main.12a43263.css.map",
     "main.6e6b7dc9.js.map": "/ba-blue/static/js/main.6e6b7dc9.js.map",
     "453.592f260d.chunk.js.map": "/ba-blue/static/js/453.592f260d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06392cd3.css",
+    "static/css/main.12a43263.css",
     "static/js/main.6e6b7dc9.js"
   ]
 }
