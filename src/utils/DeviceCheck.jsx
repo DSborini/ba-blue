@@ -9,30 +9,65 @@ const DeviceCheck = ({ children }) => {
     const location = useLocation();
 
     useEffect(() => {
-        const handleResize = () => {
-            const currentIsPortrait = window.innerHeight > window.innerWidth;
+        const handleOrientation = () => {
+            // Usa screen.width e screen.height para determinar a orientação
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            const currentIsPortrait = screenHeight > screenWidth;
+            
             setIsPortrait(currentIsPortrait);
 
             // Redireciona para a página inicial se voltar para o mobile e estiver na página de dispositivo não suportado
             if (currentIsPortrait && isMobile && location.pathname === '/unsupported') {
-                navigate('/'); // Redireciona para a página inicial
+                navigate('/');
             }
         };
 
         const checkMobile = () => {
-            setIsMobile(/Mobi|Android/i.test(navigator.userAgent));
+            // Verifica se é dispositivo móvel usando uma combinação de verificações
+            const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
+            const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            const isSmallScreen = window.screen.width < 768;
+
+            setIsMobile(isMobileDevice && hasTouch && isSmallScreen);
         };
 
+        // Configuração inicial
         checkMobile();
-        handleResize();
-        window.addEventListener('resize', handleResize);
+        handleOrientation();
+
+        // Adiciona listeners para mudanças de orientação
+        window.addEventListener('resize', handleOrientation);
+        window.addEventListener('orientationchange', handleOrientation);
+
+        // Adiciona MutationObserver para detectar mudanças na viewport
+        const viewportObserver = new MutationObserver(handleOrientation);
+        const viewport = document.querySelector('meta[name="viewport"]');
+        if (viewport) {
+            viewportObserver.observe(viewport, {
+                attributes: true,
+                attributeFilter: ['content']
+            });
+        }
 
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', handleOrientation);
+            window.removeEventListener('orientationchange', handleOrientation);
+            viewportObserver.disconnect();
         };
-    }, [isMobile, navigate, location.pathname]); // Adiciona location.pathname como dependência
+    }, [isMobile, navigate, location.pathname]);
 
-    if (!isMobile || !isPortrait) {
+    // Função para verificar se o dispositivo está em modo desktop
+    const isDesktopMode = () => {
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
+        return screenWidth > screenHeight; // Considera modo desktop se a largura for maior que a altura
+    };
+
+    // Mostra a página de dispositivo não suportado se:
+    // 1. Não é um dispositivo móvel OU
+    // 2. É um dispositivo móvel mas está em modo paisagem
+    if (!isMobile || !isPortrait || isDesktopMode()) {
         return <UnsupportedDevice />;
     }
 
