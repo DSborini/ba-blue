@@ -168,7 +168,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 35vw;
+    margin-top: 5vh;
 }
 
 .start-div-3 {
@@ -185,7 +185,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30vw;
+    margin-top: 5vh;
 }
 
 .avatar-group {
@@ -258,7 +258,7 @@
 }
 
 .sh-icon {
-    max-height: 2vh;
+    max-height: 2.5vh;
 }
 
 @keyframes slideIn {
@@ -575,6 +575,8 @@
 /* feedback */
 
 .fb-results-container {
+    margin-right: 10vw;
+    margin-left: 10vw;
     margin-top: 7vh;
     margin-bottom: 5vh;
     display: grid;
@@ -583,7 +585,7 @@
     border: 2px solid #22A1EA;
     border-radius: 50px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 85vw;
+    width: 80vw;
     height: 50vh;
     justify-self: center;
 }
@@ -625,7 +627,7 @@
 
 .fb-button {
     width: 60vw;
-    height: 5vh;
+    height: 4.5vh;
     flex-shrink: 0;
     border: none;
     border-radius: 10px;
