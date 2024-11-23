@@ -19,6 +19,7 @@ import Memory from './pages/memory';
 import MemoryFeedback from './pages/memoryFeedback';
 import Feedback from './pages/feedback';
 import Numbers from './pages/numbers';
+import DeviceCheck from './utils/DeviceCheck';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -26,6 +27,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <DeviceCheck>
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/avatar" element={<AvatarSelection />} />
@@ -45,6 +47,7 @@ root.render(
             <Route path="/games/quiz/feedback" element={<Feedback />} />
             <Route path="/numbers" element={<Numbers />} />
         </Routes>
+      </DeviceCheck>
     </Router>
   </React.StrictMode>
 );

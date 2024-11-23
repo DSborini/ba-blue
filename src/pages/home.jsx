@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import userInfoState from '../resources/userInfoState';
 import SampleHeader from '../components/sampleHeader';
 import homeOptions from '../resources/homeOptions';
 import HomeOptionCard from '../components/homeOptionCard';
+import withLoading from '../utils/withLoading';
 
 function Home() {
     const navigate = useNavigate();
     const userName = userInfoState((state) => state.userName);
+    const [optionsWithImages, setOptionsWithImages] = useState([]);
+
+    useEffect(() => {
+        // Pré-carrega as imagens das opções
+        const loadOptionImages = async () => {
+            const loadedOptions = await Promise.all(
+                homeOptions.map(async (option) => {
+                    const image = require(`../assets/images/${option.path}`);
+                    return { ...option, image };
+                })
+            );
+
+            setOptionsWithImages(loadedOptions);
+        };
+
+        loadOptionImages();
+    }, []);
 
     const handleSelectOptionClick = (optionData) => {
         const destinantion = optionData.redirect;
@@ -24,9 +42,10 @@ function Home() {
                 <p className='spartan paragraph h2'>O que vamos fazer hoje?</p>
             </div>
             <div className='h-options'>
-                {homeOptions.map((option) => (
+                {optionsWithImages.map((option) => (
                     <HomeOptionCard
-                        imagePath={require(`../assets/images/${option.path}`)}
+                        key={option.name}
+                        imagePath={option.image}
                         imageSize={option.size}
                         imageMargin={option.margin}
                         onClick={() => handleSelectOptionClick(option)}
@@ -40,4 +59,5 @@ function Home() {
     );
 }
 
-export default Home;
+// Aplica o HOC withLoading
+export default withLoading(Home);
