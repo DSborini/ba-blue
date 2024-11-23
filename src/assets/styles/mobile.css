@@ -38,7 +38,7 @@
 }
 
 .h2 {
-    margin-top: -4.5vh;
+    margin-top: -5vh;
     color: #000000;
     font-size: 5.5vw;
 }
@@ -198,8 +198,8 @@
 }
 
 .avatar-div-1 {
-    margin-top: 13vh;
-    margin-bottom: 13vh;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
     margin-right: 0.5vh;
     margin-left: 0.5vh;
 }
@@ -210,8 +210,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 8px;
     background-color: #f8f8f8;
+    max-height: 2vh;
+    margin-bottom: -2vh;
     /* border-bottom: 1px solid #ddd; */
 }
 
@@ -248,10 +250,15 @@
 .sh-button-disabled {
     opacity: 0.5;
     cursor: not-allowed;
+    max-height: 2.5vh;
 }
 
 .sh-icon-disabled {
     opacity: 0.5;
+}
+
+.sh-icon {
+    max-height: 2vh;
 }
 
 @keyframes slideIn {
@@ -350,7 +357,7 @@
     display: grid;
     align-items: space-between;
     height: 70vh;
-    margin-top: 3vh;
+    margin-top: 0vh;
 }
 
 .h-options-button {
