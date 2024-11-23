@@ -7,7 +7,7 @@ const DeviceCheck = ({ children }) => {
     const [isPortrait, setIsPortrait] = useState(true);
     const navigate = useNavigate();
     const location = useLocation();
-    const devMode = true;
+    const devMode = false;
 
     useEffect(() => {
         const handleOrientation = () => {
