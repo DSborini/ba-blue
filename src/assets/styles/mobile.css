@@ -35,6 +35,7 @@
 .h1 {
     color: #C78AE4;
     font-size: 10vw;
+    margin-top: 45px;
 }
 
 .h2 {
@@ -211,11 +212,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    background-color: #f8f8f8;
-    max-height: 2vh;
-    margin-bottom: -2vh;
-    /* border-bottom: 1px solid #ddd; */
-}
+    background-color: #f6f6f6;
+    height: 15px; /* Altura fixa em pixels ao invés de vh */
+    width: 100%; /* Ocupa toda largura */
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
+  }
 
 .sh-button {
     background-color: transparent;
@@ -259,6 +263,7 @@
 
 .sh-icon {
     max-height: 2.5vh;
+    margin-right: 4vw;
 }
 
 @keyframes slideIn {

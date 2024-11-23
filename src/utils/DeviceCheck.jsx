@@ -7,6 +7,7 @@ const DeviceCheck = ({ children }) => {
     const [isPortrait, setIsPortrait] = useState(true);
     const navigate = useNavigate();
     const location = useLocation();
+    const devMode = true;
 
     useEffect(() => {
         const handleOrientation = () => {
@@ -67,7 +68,7 @@ const DeviceCheck = ({ children }) => {
     // Mostra a página de dispositivo não suportado se:
     // 1. Não é um dispositivo móvel OU
     // 2. É um dispositivo móvel mas está em modo paisagem
-    if (!isMobile || !isPortrait || isDesktopMode()) {
+    if ((!isMobile || !isPortrait || isDesktopMode()) && !devMode) {
         return <UnsupportedDevice />;
     }
 
