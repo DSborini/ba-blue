@@ -1,0 +1,62 @@
+[
+    {
+        "value": 0,
+        "label": "Zero",
+        "label_ptbr": "Zero",
+        "backgroundColor": "#C78AE4"
+    },
+    {
+        "value": 1,
+        "label": "One",
+        "label_ptbr": "Um",
+        "backgroundColor": "#0494E8"
+    },
+    {
+        "value": 2,
+        "label": "Two",
+        "label_ptbr": "Dois",
+        "backgroundColor": "#0494E8"
+    },
+    {
+        "value": 3,
+        "label": "Three",
+        "label_ptbr": "Três",
+        "backgroundColor": "#0494E8"
+    },
+    {
+        "value": 4,
+        "label": "Four",
+        "label_ptbr": "Quatro",
+        "backgroundColor": "#FECC33"
+    },
+    {
+        "value": 5,
+        "label": "Five",
+        "label_ptbr": "Cinco",
+        "backgroundColor": "#FECC33"
+    },
+    {
+        "value": 6,
+        "label": "Six",
+        "label_ptbr": "Seis",
+        "backgroundColor": "#FECC33"
+    },
+    {
+        "value": 7,
+        "label": "Seven",
+        "label_ptbr": "Sete",
+        "backgroundColor": "#9CEF79"
+    },
+    {
+        "value": 8,
+        "label": "Eight",
+        "label_ptbr": "Oito",
+        "backgroundColor": "#9CEF79"
+    },
+    {
+        "value": 9,
+        "label": "Nine",
+        "label_ptbr": "Nove",
+        "backgroundColor": "#9CEF79"
+    }
+]

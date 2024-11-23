@@ -1,0 +1,29 @@
+[
+    {
+        "name": "MEU ESPAÇO",
+        "description": "Aqui você pode mostrar como está se sentido!",
+        "path": "mySpaceHome.png",
+        "size": "10",
+        "margin": "8",
+        "color": "#FECC33",
+        "redirect": "myspace"
+    },
+    {
+        "name": "HORA DE APRENDER",
+        "description": "Aqui você pode estudar e aprender coisas novas!",
+        "path": "studyTimeHome.png",
+        "size": "10",
+        "margin": "5",
+        "color": "#CB6CE6",
+        "redirect": "studytime"
+    },
+    {
+        "name": "JOGOS",
+        "description": "Aqui você pode se divertir com jogos!",
+        "path": "gamesHome.png",
+        "size": "7",
+        "margin": "5",
+        "color": "#004AAD",
+        "redirect": "games"
+    }
+]

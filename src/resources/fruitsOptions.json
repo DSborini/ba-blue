@@ -1,0 +1,198 @@
+[
+    {
+        "id": 1,
+        "nameToSpeech": "frutas",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrFruits.png"
+    },
+    {
+        "id": 2,
+        "nameToSpeech": "fruits",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusFruits.png"
+    },
+    {
+        "id": 3,
+        "nameToSpeech": "abacaxi",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrPineapple.png"
+    },
+    {
+        "id": 4,
+        "nameToSpeech": "pineapple",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusPineapple.png"
+    },
+    {
+        "id": 5,
+        "nameToSpeech": "abacate",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrAvocado.png"
+    },
+    {
+        "id": 6,
+        "nameToSpeech": "avocado",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusAvocado.png"
+    },
+    {
+        "id": 7,
+        "nameToSpeech": "maçã",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrApple.png"
+    },
+    {
+        "id": 8,
+        "nameToSpeech": "apple",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusApple.png"
+    },
+    {
+        "id": 9,
+        "nameToSpeech": "banana",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrBanana.png"
+    },
+    {
+        "id": 10,
+        "nameToSpeech": "banana",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusBanana.png"
+    },
+    {
+        "id": 11,
+        "nameToSpeech": "cereja",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrCherry.png"
+    },
+    {
+        "id": 12,
+        "nameToSpeech": "cherry",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusCherry.png"
+    },
+    {
+        "id": 13,
+        "nameToSpeech": "goiaba",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrGuava.png"
+    },
+    {
+        "id": 14,
+        "nameToSpeech": "guava",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusGuava.png"
+    },
+    {
+        "id": 15,
+        "nameToSpeech": "uvas",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrGrapes.png"
+    },
+    {
+        "id": 16,
+        "nameToSpeech": "grapes",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusGrapes.png"
+    },
+    {
+        "id": 17,
+        "nameToSpeech": "graviola",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrSoursop.png"
+    },
+    {
+        "id": 18,
+        "nameToSpeech": "guyabano",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusSoursop.png"
+    },
+    {
+        "id": 19,
+        "nameToSpeech": "mamão",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrPapaya.png"
+    },
+    {
+        "id": 20,
+        "nameToSpeech": "papaya",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusPapaya.png"
+    },
+    {
+        "id": 21,
+        "nameToSpeech": "limão",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrLemon.png"
+    },
+    {
+        "id": 22,
+        "nameToSpeech": "lemon",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusLemon.png"
+    },
+    {
+        "id": 23,
+        "nameToSpeech": "morango",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrStrawberry.png"
+    },
+    {
+        "id": 24,
+        "nameToSpeech": "strawberry",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusStrawberry.png"
+    },
+    {
+        "id": 25,
+        "nameToSpeech": "melancia",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrWatermelon.png"
+    },
+    {
+        "id": 26,
+        "nameToSpeech": "watermelon",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusWatermelon.png"
+    },
+    {
+        "id": 27,
+        "nameToSpeech": "melão",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrMelon.png"
+    },
+    {
+        "id": 28,
+        "nameToSpeech": "melon",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusMelon.png"
+    }
+]

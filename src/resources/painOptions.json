@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nameToSpeech": {
+            "he/him": "dor na barriga",
+            "she/her": "dor na barriga"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faStomach.png",
+            "secondAvatar": "saStomach.png",
+            "thirdAvatar": "taStomach.png",
+            "fourthAvatar": "foStomach.png"
+        }
+    },
+    {
+        "id": 2,
+        "nameToSpeech": {
+            "he/him": "doente",
+            "she/her": "doente"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faSick.png",
+            "secondAvatar": "saSick.png",
+            "thirdAvatar": "taSick.png",
+            "fourthAvatar": "foSick.png"
+        }
+    },
+    {
+        "id": 3,
+        "nameToSpeech": {
+            "he/him": "banheiro",
+            "she/her": "banheiro"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faBathroom.png",
+            "secondAvatar": "saBathroom.png",
+            "thirdAvatar": "taBathroom.png",
+            "fourthAvatar": "foBathroom.png"
+        }
+    },
+    {
+        "id": 4,
+        "nameToSpeech": {
+            "he/him": "dor de dente",
+            "she/her": "dor de dente"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faToothache.png",
+            "secondAvatar": "saToothache.png",
+            "thirdAvatar": "taToothache.png",
+            "fourthAvatar": "foToothache.png"
+        }
+    }
+]

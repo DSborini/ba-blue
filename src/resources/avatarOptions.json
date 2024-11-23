@@ -1,0 +1,26 @@
+[
+    {
+        "name": "firstAvatar",
+        "path": "firstAvatar.png",
+        "profilePath": "firstAvatarProfile.png",
+        "pronoun": "he/him"
+    },
+    {
+        "name": "secondAvatar",
+        "path": "secondAvatar.png",
+        "profilePath": "secondAvatarProfile.png",
+        "pronoun": "he/him"
+    },
+    {
+        "name": "thirdAvatar",
+        "path": "thirdAvatar.png",
+        "profilePath": "thirdAvatarProfile.png",
+        "pronoun": "she/her"
+    },
+    {
+        "name": "fourthAvatar",
+        "path": "fourthAvatar.png",
+        "profilePath": "fourthAvatarProfile.png",
+        "pronoun": "she/her"
+    }
+]

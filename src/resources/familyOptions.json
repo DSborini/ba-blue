@@ -1,0 +1,198 @@
+[
+    {
+        "id": 1,
+        "nameToSpeech": "filha",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrDaughter.png"
+    },
+    {
+        "id": 2,
+        "nameToSpeech": "daughter",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusDaughter.png"
+    },
+    {
+        "id": 3,
+        "nameToSpeech": "filho",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrSon.png"
+    },
+    {
+        "id": 4,
+        "nameToSpeech": "son",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusSon.png"
+    },
+    {
+        "id": 5,
+        "nameToSpeech": "mãe",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrMother.png"
+    },
+    {
+        "id": 6,
+        "nameToSpeech": "mother",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusMother.png"
+    },
+    {
+        "id": 7,
+        "nameToSpeech": "pai",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrFather.png"
+    },
+    {
+        "id": 8,
+        "nameToSpeech": "dad",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusFather.png"
+    },
+    {
+        "id": 9,
+        "nameToSpeech": "sobrinho",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrNephew.png"
+    },
+    {
+        "id": 10,
+        "nameToSpeech": "nephew",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusNephew.png"
+    },
+    {
+        "id": 11,
+        "nameToSpeech": "sobrinha",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrNiece.png"
+    },
+    {
+        "id": 12,
+        "nameToSpeech": "niece",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusNiece.png"
+    },
+    {
+        "id": 13,
+        "nameToSpeech": "tia",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrAunt.png"
+    },
+    {
+        "id": 14,
+        "nameToSpeech": "aunt",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusAunt.png"
+    },
+    {
+        "id": 15,
+        "nameToSpeech": "tio",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrUncle.png"
+    },
+    {
+        "id": 16,
+        "nameToSpeech": "uncle",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusUncle.png"
+    },
+    {
+        "id": 17,
+        "nameToSpeech": "avó",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrGrandmother.png"
+    },
+    {
+        "id": 18,
+        "nameToSpeech": "grandma",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusGrandmother.png"
+    },
+    {
+        "id": 19,
+        "nameToSpeech": "avô",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrGrandfather.png"
+    },
+    {
+        "id": 20,
+        "nameToSpeech": "grandpa",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusGrandfather.png"
+    },
+    {
+        "id": 21,
+        "nameToSpeech": "irmão",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrBrother.png"
+    },
+    {
+        "id": 22,
+        "nameToSpeech": "brother",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusBrother.png"
+    },
+    {
+        "id": 23,
+        "nameToSpeech": "irmã",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrSister.png"
+    },
+    {
+        "id": 24,
+        "nameToSpeech": "sister",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusSister.png"
+    },
+    {
+        "id": 25,
+        "nameToSpeech": "prima",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrCousinFemale.png"
+    },
+    {
+        "id": 26,
+        "nameToSpeech": "cousin",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusCousinFemale.png"
+    },
+    {
+        "id": 27,
+        "nameToSpeech": "primo",
+        "language": "pt-BR",
+        "descriptionToSpeech": "",
+        "path": "ptbrCousinMale.png"
+    },
+    {
+        "id": 28,
+        "nameToSpeech": "cousin",
+        "language": "en-US",
+        "descriptionToSpeech": "",
+        "path": "enusCousinMale.png"
+    }
+]

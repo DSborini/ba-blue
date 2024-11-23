@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Planetas",
+        "backCard": "backCard.png",
+        "cards": [
+            {
+                "id": 1,
+                "name": "Mercúrio",
+                "path": "mercury.png"
+            },
+            {
+                "id": 2,
+                "name": "Marte",
+                "path": "mars.png"
+            },
+            {
+                "id": 3,
+                "name": "Júpiter",
+                "path": "jupiter.png"
+            },
+            {
+                "id": 4,
+                "name": "Netuno",
+                "path": "neptune.png"
+            }
+        ]
+    }
+]

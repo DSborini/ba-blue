@@ -1,0 +1,30 @@
+[
+    {
+      "minPercentage": 0,
+      "maxPercentage": 30,
+      "feedback": "Continue praticando! A memória é como um músculo, quanto mais você exercita, mais forte ela fica.",
+      "path": "twoStar.png",
+      "extraContent": "Tente se concentrar nas imagens e criar associações mentais para lembrar das posições."
+    },
+    {
+      "minPercentage": 31,
+      "maxPercentage": 60,
+      "feedback": "Bom trabalho! Você está desenvolvendo bem sua memória.",
+      "path": "threeStars.png",
+      "extraContent": "Tente criar estratégias para memorizar as posições dos pares."
+    },
+    {
+      "minPercentage": 61,
+      "maxPercentage": 90,
+      "feedback": "Excelente! Sua memória está muito afiada!",
+      "path": "fourStars.png",
+      "extraContent": "Você está quase dominando o jogo completamente!"
+    },
+    {
+      "minPercentage": 91,
+      "maxPercentage": 100,
+      "feedback": "Perfeito! Você tem uma memória extraordinária!",
+      "path": "fiveStars.png",
+      "extraContent": "Continue assim! Você está pronto para desafios mais difíceis!"
+    }
+  ]

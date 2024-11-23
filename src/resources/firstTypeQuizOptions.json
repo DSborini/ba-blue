@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "name": "Sentimentos",
+        "questions": [
+            {
+                "questionText": "Essa é a Luna. Como Luna parece estar se sentindo?",
+                "questionNumber": "1",
+                "imagePath": "happyIcon.png",
+                "correctAnswer": 3,
+                "options": [
+                    {
+                        "option": "Triste",
+                        "value": 1
+                    },
+                    {
+                        "option": "Brava",
+                        "value": 2
+                    },
+                    {
+                        "option": "Feliz",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "questionText": "Essa é a Patrícia. Ela tem um tarefa difícil para fazer. Patrícia parece estar:",
+                "questionNumber": "2",
+                "imagePath": "worriedIcon.png",
+                "correctAnswer": 2,
+                "options": [
+                    {
+                        "option": "Triste",
+                        "value": 1
+                    },
+                    {
+                        "option": "Preocupada",
+                        "value": 2
+                    },
+                    {
+                        "option": "Feliz",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "questionText": "Pedro chegou em uma escola nova e teve que fazer novos amigos. Pedro parece estar:",
+                "questionNumber": "3",
+                "imagePath": "embarrassedIcon.png",
+                "correctAnswer": 1,
+                "options": [
+                    {
+                        "option": "Envergonhado",
+                        "value": 1
+                    },
+                    {
+                        "option": "Bravo",
+                        "value": 2
+                    },
+                    {
+                        "option": "Feliz",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "questionText": "Pedro percebeu que não precisava ficar envergonhado e fez novos amigos. Agora todos parecem estar:",
+                "questionNumber": "4",
+                "imagePath": "happyGroupIcon.png",
+                "correctAnswer": 1,
+                "options": [
+                    {
+                        "option": "Felizes",
+                        "value": 1
+                    },
+                    {
+                        "option": "Envergonhados",
+                        "value": 2
+                    },
+                    {
+                        "option": "Bravos",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "questionText": "Esse é o Lino. Lino não está se sentindo bem, o que ele parece estar sentindo?",
+                "questionNumber": "5",
+                "imagePath": "sickIcon.png",
+                "correctAnswer": 2,
+                "options": [
+                    {
+                        "option": "Dor de cabeça",
+                        "value": 1
+                    },
+                    {
+                        "option": "Dor de garganta",
+                        "value": 2
+                    },
+                    {
+                        "option": "Dor no braço",
+                        "value": 3
+                    }
+                ]
+            }
+        ]
+    }
+]

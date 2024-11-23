@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "nameToSpeech": {
+            "he/him": "triste",
+            "she/her": "triste"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faSad.png",
+            "secondAvatar": "saSad.png",
+            "thirdAvatar": "taSad.png",
+            "fourthAvatar": "foSad.png"
+        }
+    },
+    {
+        "id": 2,
+        "nameToSpeech": {
+            "he/him": "irritado",
+            "she/her": "irritada"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faAngry.png",
+            "secondAvatar": "saAngry.png",
+            "thirdAvatar": "taAngry.png",
+            "fourthAvatar": "foAngry.png"
+        }
+    },
+    {
+        "id": 3,
+        "nameToSpeech": {
+            "he/him": "medo",
+            "she/her": "medo"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faFear.png",
+            "secondAvatar": "saFear.png",
+            "thirdAvatar": "taFear.png",
+            "fourthAvatar": "foFear.png"
+        }
+    },
+    {
+        "id": 4,
+        "nameToSpeech": {
+            "he/him": "confuso",
+            "she/her": "confusa"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faConfused.png",
+            "secondAvatar": "saConfused.png",
+            "thirdAvatar": "taConfused.png",
+            "fourthAvatar": "foConfused.png"
+        }
+    },
+    {
+        "id": 5,
+        "nameToSpeech": {
+            "he/him": "feliz",
+            "she/her": "feliz"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faHappy.png",
+            "secondAvatar": "saHappy.png",
+            "thirdAvatar": "taHappy.png",
+            "fourthAvatar": "foHappy.png"
+        }
+    },
+    {
+        "id": 6,
+        "nameToSpeech": {
+            "he/him": "vergonha",
+            "she/her": "vergonha"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faShame.png",
+            "secondAvatar": "saShame.png",
+            "thirdAvatar": "taShame.png",
+            "fourthAvatar": "foShame.png"
+        }
+    },
+    {
+        "id": 7,
+        "nameToSpeech": {
+            "he/him": "ansioso",
+            "she/her": "ansiosa"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faAnxious.png",
+            "secondAvatar": "saAnxious.png",
+            "thirdAvatar": "taAnxious.png",
+            "fourthAvatar": "foAnxious.png"
+        }
+    },
+    {
+        "id": 8,
+        "nameToSpeech": {
+            "he/him": "preocupado",
+            "she/her": "preocupada"
+        },
+        "descriptionToSpeech": "",
+        "path": {
+            "firstAvatar": "faWorried.png",
+            "secondAvatar": "saWorried.png",
+            "thirdAvatar": "taWorried.png",
+            "fourthAvatar": "foWorried.png"
+        }
+    }
+]
