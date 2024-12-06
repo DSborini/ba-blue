@@ -7,7 +7,7 @@ const DeviceCheck = ({ children }) => {
     const [isPortrait, setIsPortrait] = useState(true);
     const navigate = useNavigate();
     const location = useLocation();
-    const devMode = false;
+    const devMode = true; // Altere para true para testar a página de dispositivo não suportado
 
     useEffect(() => {
         const handleOrientation = () => {
