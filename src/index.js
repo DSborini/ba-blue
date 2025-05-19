@@ -20,6 +20,7 @@ import MemoryFeedback from './pages/memoryFeedback';
 import Feedback from './pages/feedback';
 import Numbers from './pages/numbers';
 import DeviceCheck from './utils/DeviceCheck';
+import './config/firebase';
 
 import reportWebVitals from './reportWebVitals';
 
