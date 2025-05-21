@@ -1,3 +1,4 @@
+import { use } from 'react';
 import { db } from '../config/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -7,15 +8,20 @@ class AnalyticsService {
     }
 
     // Método base para registrar eventos
-    async trackEvent(userId, eventData) {
+    async trackEvent(userId, userDeviceInfo, eventData) {
         if (!userId) {
             console.error('UserId é necessário para registrar eventos');
             return;
-        }
+        };
+
+        if (!userDeviceInfo) {
+            userDeviceInfo = "unknown";
+        };
 
         try {
             await addDoc(collection(this.db, 'analytics'), {
                 userId,
+                userDeviceInfo,
                 ...eventData,
                 timestamp: serverTimestamp()
             });
@@ -26,29 +32,36 @@ class AnalyticsService {
     }
 
     // Métodos específicos para diferentes tipos de eventos
-    async trackPageView(userId, pageName) {
-        return this.trackEvent(userId, {
+    async trackPageView(userId, userDeviceInfo, pageName) {
+        return this.trackEvent(userId, userDeviceInfo, {
             type: 'page_view',
             page: pageName,
         });
     }
 
-    async trackGameCompletion(userId, gameData) {
-        return this.trackEvent(userId, {
+    async trackPageExit(userId, userDeviceInfo, pageName) {
+        return this.trackEvent(userId, userDeviceInfo, {
+            type: 'page_exit',
+            page: pageName,
+        });
+    }
+
+    async trackGameCompletion(userId, userDeviceInfo, gameData) {
+        return this.trackEvent(userId, userDeviceInfo, {
             type: 'game_completion',
             ...gameData,
         });
     }
 
-    async trackUserInteraction(userId, interactionData) {
-        return this.trackEvent(userId, {
+    async trackUserInteraction(userId, userDeviceInfo, interactionData) {
+        return this.trackEvent(userId, userDeviceInfo, {
             type: 'user_interaction',
             ...interactionData,
         });
     }
 
-    async trackError(userId, errorData) {
-        return this.trackEvent(userId, {
+    async trackError(userId, userDeviceInfo, errorData) {
+        return this.trackEvent(userId, userDeviceInfo, {
             type: 'error',
             ...errorData,
         });

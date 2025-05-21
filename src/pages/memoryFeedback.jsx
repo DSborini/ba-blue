@@ -3,12 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import userInfoState from '../resources/userInfoState';
 import memoryFeedbackResults from '../resources/memoryFeedbackResults.json';
 import SampleHeader from '../components/sampleHeader';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { getUserId, getUserUniqueString } from '../utils/userIdentifier';
 
 const MemoryFeedback = () => {
     const navigate = useNavigate();
     const userMemoryScore = userInfoState((state) => state.userLastMemoryGameScore);
     const resetMemoryScore = userInfoState((state) => state.resetUserLastMemoryGameScore);
-    
+    const analytics = useAnalytics(getUserId(), getUserUniqueString());
+
     // Assumindo que a pontuação máxima é 40 (4 pares = 8 cards, 10 pontos por par)
     const maxScore = 40;
     // Calcula a porcentagem da pontuação
@@ -22,19 +25,45 @@ const MemoryFeedback = () => {
     const { feedback, path, extraContent } = respectiveFeedback;
 
     const handleAdvance = () => {
+        registerOptionSelection('proximo_nivel');
+        registerFeedback();
+
         resetMemoryScore();
         // Navega para o próximo nível ou jogo
         navigate('/games/memory/', { replace: true });
     };
     
     const handleTryAgain = () => {
+        registerOptionSelection('tentar_novamente');
+        registerFeedback();
+
         resetMemoryScore();
         navigate('/games/memory', { replace: true });
     };
     
     const handleMenu = () => {
+        registerOptionSelection('menu');
+        registerFeedback();
+
         resetMemoryScore();
         navigate('/home', { replace: true });
+    };
+
+    const registerFeedback = () => {
+        analytics.trackUserInteraction({
+            type: 'memory_feedback',
+            action: 'feedback_received',
+            feedback: feedback,
+            score: userMemoryScore
+        });
+    };
+
+    const registerOptionSelection = (selectedOption) => {
+        analytics.trackUserInteraction({
+            type: 'memory_feedback_option_selection',
+            action: 'select_option',
+            selectedOption: selectedOption
+        });
     };
 
     return (

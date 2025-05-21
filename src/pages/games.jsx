@@ -3,14 +3,21 @@ import { useNavigate } from 'react-router-dom';
 import SampleHeader from '../components/sampleHeader';
 import gameOptions from '../resources/gameOptions.json';
 import GamesOptionCard from '../components/gamesOptionCard';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { getUserId, getUserUniqueString } from '../utils/userIdentifier';
 
 function Games() {
     const navigate = useNavigate();
+    const analytics = useAnalytics(getUserId(), getUserUniqueString());
 
     const handleSelectOptionClick = (optionData) => {
-        const destinantion = optionData.redirect;
-        console.log(destinantion);
+        analytics.trackUserInteraction({
+            type: 'game_option_selection',
+            action: 'select_option',
+            selectedOption: optionData.name
+        });
 
+        const destinantion = optionData.redirect;
         navigate('/' + destinantion);
     };
 

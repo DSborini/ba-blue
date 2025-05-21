@@ -20,6 +20,7 @@ import MemoryFeedback from './pages/memoryFeedback';
 import Feedback from './pages/feedback';
 import Numbers from './pages/numbers';
 import DeviceCheck from './utils/DeviceCheck';
+import RouteTracker from './components/routeTracker';
 import './config/firebase';
 
 import reportWebVitals from './reportWebVitals';
@@ -29,7 +30,8 @@ root.render(
   <React.StrictMode>
     <Router>
       <DeviceCheck>
-        <Routes>
+        <RouteTracker>
+          <Routes>
             <Route path="/" element={<App />} />
             <Route path="/avatar" element={<AvatarSelection />} />
             <Route path="/home" element={<Home />} />
@@ -47,7 +49,8 @@ root.render(
             <Route path="/games/memory/feedback" element={<MemoryFeedback />} />
             <Route path="/games/quiz/feedback" element={<Feedback />} />
             <Route path="/numbers" element={<Numbers />} />
-        </Routes>
+          </Routes>
+        </RouteTracker>
       </DeviceCheck>
     </Router>
   </React.StrictMode>

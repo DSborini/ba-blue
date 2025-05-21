@@ -4,11 +4,14 @@ import SampleHeader from '../components/sampleHeader';
 import studyTimeOptions from '../resources/studyTimeOptions';
 import StudyTimeOptionCard from '../components/studyTimeOptionCard';
 import withLoading from '../utils/withLoading';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { getUserId, getUserUniqueString } from '../utils/userIdentifier';
 
 function StudyTime() {
     const navigate = useNavigate();
     const [optionsWithImages, setOptionsWithImages] = useState([]);
     const [isReady, setIsReady] = useState(false);
+    const analytics = useAnalytics(getUserId(), getUserUniqueString());
 
     useEffect(() => {
         const loadOptionImages = async () => {
@@ -32,6 +35,12 @@ function StudyTime() {
     }, []);
 
     const handleSelectOptionClick = (optionData) => {
+        analytics.trackUserInteraction({
+            type: 'study_time_option_selection',
+            action: 'select_option',
+            selectedOption: optionData.name
+        });
+
         const destinantion = optionData.redirect;
         console.log(destinantion);
         navigate('/' + destinantion);

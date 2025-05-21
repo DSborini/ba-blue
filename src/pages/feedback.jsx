@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import userInfoState from '../resources/userInfoState';
 import feedbackResults from '../resources/feedbackResults.json';
 import SampleHeader from '../components/sampleHeader';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { getUserId, getUserUniqueString } from '../utils/userIdentifier';
 
 const Feedback = () => {
     const navigate = useNavigate();
@@ -10,23 +12,50 @@ const Feedback = () => {
     const resetScore = userInfoState((state) => state.resetUserLastQuizScore);
     const respectiveFeedback = feedbackResults.filter((result) => result.rating == userLastQuizScore);
     const totalPossibleScore = feedbackResults.length - 1;
+    const analytics = useAnalytics(getUserId(), getUserUniqueString());
 
     const { feedback, path, extraContent } = respectiveFeedback[0];
 
     const handleAdvance = () => {
+        registerOptionSelection('avancar');
+        registerFeedback();
+
         resetScore();
         navigate('/games/quiz', { replace: true });
     };
     
     const handleTryAgain = () => {
+        registerOptionSelection('tentar_novamente');
+        registerFeedback();
+
         resetScore();
         navigate('/games/quiz', { replace: true });
     };
     
     const handleMenu = () => {
+        registerOptionSelection('menu');
+        registerFeedback();
+
         resetScore();
         navigate('/home', { replace: true });
     };
+
+    const registerFeedback = () => {
+        analytics.trackUserInteraction({
+            type: 'quiz_feedback',
+            action: 'feedback_received',
+            feedback: feedback,
+            score: userLastQuizScore
+        });
+    };
+
+    const registerOptionSelection = (selectedOption) => {
+        analytics.trackUserInteraction({
+            type: 'quiz_feedback_option_selection',
+            action: 'select_option',
+            selectedOption: selectedOption
+        });
+    }
 
     return (
         <div>

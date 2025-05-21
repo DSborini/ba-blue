@@ -5,11 +5,14 @@ import SampleHeader from '../components/sampleHeader';
 import homeOptions from '../resources/homeOptions';
 import HomeOptionCard from '../components/homeOptionCard';
 import withLoading from '../utils/withLoading';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { getUserId, getUserUniqueString } from '../utils/userIdentifier';
 
 function Home() {
     const navigate = useNavigate();
     const userName = userInfoState((state) => state.userName);
     const [optionsWithImages, setOptionsWithImages] = useState([]);
+    const analytics = useAnalytics(getUserId(), getUserUniqueString());
 
     useEffect(() => {
         // Pré-carrega as imagens das opções
@@ -28,9 +31,13 @@ function Home() {
     }, []);
 
     const handleSelectOptionClick = (optionData) => {
-        const destinantion = optionData.redirect;
-        console.log(destinantion);
+        analytics.trackUserInteraction({
+            type: 'home_option_selection',
+            action: 'select_option',
+            selectedOption: optionData.name
+        });
 
+        const destinantion = optionData.redirect;
         navigate('/' + destinantion);
     };
 

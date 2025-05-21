@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import useInfoState from '../resources/userInfoState';
 import mainIcon from '../assets/images/mainIcon.png';
 import { useAnalytics } from '../hooks/useAnalytics';
+import { getUserId, getUserUniqueString } from '../utils/userIdentifier';
 
 function Start() {
     const [showStartButton, setShowStartButton] = useState(true);
@@ -11,32 +12,9 @@ function Start() {
 
     const setUserName = useInfoState((state) => state.setUserName);
     const navigate = useNavigate();
-    
-    const tempUserId = localStorage.getItem('tempUserId') || `temp_${Date.now()}`;
-    const analytics = useAnalytics(tempUserId);
-
-    // Efeito apenas para entrada na página
-    useEffect(() => {
-        analytics.trackPageView('start_page');
-    }, []); // Sem dependências, roda apenas uma vez
-
-    // Efeito separado para cleanup/saída
-    useEffect(() => {
-        return () => {
-            // Só registra a saída se realmente houve interação
-            if (showInputAndEnterButton || inputValue) {
-                analytics.trackUserInteraction({
-                    type: 'page_exit',
-                    page: 'start_page',
-                    lastInputValue: inputValue,
-                    hadInteraction: showInputAndEnterButton
-                });
-            }
-        };
-    }, []); // Sem dependências, cleanup roda apenas no unmount
+    const analytics = useAnalytics(getUserId(), getUserUniqueString());
 
     const handleStartClick = () => {
-        // Registra o clique no botão de começar
         analytics.trackUserInteraction({
             type: 'button_click',
             action: 'start_button'

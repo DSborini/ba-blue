@@ -4,10 +4,13 @@ import AvatarCard from '../components/avatarCard';
 import avatarOptions from '../resources/avatarOptions';
 import useInfoState from '../resources/userInfoState';
 import withLoading from '../utils/withLoading';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { getUserId, getUserUniqueString } from '../utils/userIdentifier';
 
 function AvatarSelection() {
     const setUserSelectedAvatar = useInfoState((state) => state.setUserSelectedAvatar);
     const navigate = useNavigate();
+    const analytics = useAnalytics(getUserId(), getUserUniqueString());
     const [avatarImages, setAvatarImages] = useState([]);
 
     useEffect(() => {
@@ -26,6 +29,12 @@ function AvatarSelection() {
     }, []);
 
     const handleSelectAvatarClick = (avatarData) => {
+        analytics.trackUserInteraction({
+            type: 'avatar_selection',
+            action: 'select_avatar',
+            selectedAvatar: avatarData.name
+        });
+
         setUserSelectedAvatar(avatarData);
         navigate('/home');
     };
@@ -46,5 +55,4 @@ function AvatarSelection() {
     );
 }
 
-// Aplica o HOC withLoading
 export default withLoading(AvatarSelection);
